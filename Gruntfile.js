@@ -31,8 +31,10 @@ module.exports = function(grunt) {
     // Configuration to be run (and then tested).
     simple_tpl: {
       options: {
-        title: 'just a test',
-        cdn_path: 'http://mycdn.com/www/1604'
+        data: {
+          title: 'just a test',
+          cdn_path: 'http://mycdn.com/www/1604'
+        }
       },
       html: {
         expand: true,

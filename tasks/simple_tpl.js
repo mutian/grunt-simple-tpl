@@ -12,7 +12,8 @@ var path = require('path');
 
 module.exports = function(grunt) {
   grunt.registerMultiTask('simple_tpl', 'Simple Template', function() {
-    var data = this.options();
+    var options = this.options();
+    var data = options.data || {};
     
     // var parseTpl = function(fileContent) {
     //   var content = grunt.file.read(gruntRelPath);

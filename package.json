@@ -1,7 +1,7 @@
 {
   "name": "grunt-simple-tpl",
   "description": "Simple Template for Grunt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "git://github.com/mutian/grunt-simple-tpl.git",
   "author": "Mutian Wang <mutian@me.com> (http://mutian.wang)",
   "repository": {
