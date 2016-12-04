@@ -1,4 +1,4 @@
-# grunt-simple-tpl v0.1.2
+# grunt-simple-tpl v0.1.3
 
 > Simple template for HTML, JS and CSS
 

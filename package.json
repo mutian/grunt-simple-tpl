@@ -3,7 +3,10 @@
   "description": "Simple Template for Grunt",
   "version": "0.1.2",
   "homepage": "git://github.com/mutian/grunt-simple-tpl.git",
-  "author": "Mutian Wang <mutian@me.com> (http://mutian.wang)",
+  "author": {
+    "name": "Mutian Wang",
+    "url": "http://mutian.wang/"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/mutian/grunt-simple-tpl.git"
@@ -11,12 +14,7 @@
   "bugs": {
     "url": "https://github.com/mutian/grunt-simple-tpl/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "git://github.com/mutian/grunt-simple-tpl.git/blob/master/LICENSE-MIT"
-    }
-  ],
+  "licenses": "MIT",
   "engines": {
     "node": ">= 0.8.0"
   },
@@ -36,8 +34,7 @@
   "keywords": [
     "gruntplugin"
   ],
-  "directories": {
-    "test": "test"
-  },
-  "license": "ISC"
+  "files": [
+    "tasks"
+  ]
 }
