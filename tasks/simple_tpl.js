@@ -21,19 +21,21 @@ module.exports = function(grunt) {
           grunt.log.error('Source file "' + src + '" not found.');
         }
 
-        var dest = file.dest;
-        dest = grunt.file.isDir(dest) ? dest + path.basename(src) : dest;
-
         var content = grunt.file.read(src);
         if (content) {
           content = content.replace(/\{\{\{([\w\.-]+?)\}\}\}/g, function(match, key) {
+            if (! (key in data)) {
+              return match;
+            }
             var replace = data[key];
             return ('string' === typeof replace) ? replace : match;
           });
+
+          var dest = file.dest;
+          dest = grunt.file.isDir(dest) ? dest + path.basename(src) : dest;
           grunt.file.write(dest, content);
+          grunt.log.ok('File "' + dest + '" created.');
         }
-        
-        grunt.log.ok('File "' + dest + '" created.');
       });
     });
 
