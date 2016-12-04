@@ -1,7 +1,7 @@
 {
   "name": "grunt-simple-tpl",
   "description": "Simple template for HTML, JS and CSS",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "homepage": "git://github.com/mutian/grunt-simple-tpl.git",
   "author": {
     "name": "Mutian Wang",
