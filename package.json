@@ -20,6 +20,7 @@
   "engines": {
     "node": ">= 0.8.0"
   },
+  "main": "tasks/simple_tpl.js",
   "scripts": {
     "test": "grunt test"
   },
@@ -35,7 +36,6 @@
   "keywords": [
     "gruntplugin"
   ],
-  "main": "Gruntfile.js",
   "directories": {
     "test": "test"
   },
