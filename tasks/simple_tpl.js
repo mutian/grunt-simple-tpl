@@ -1,5 +1,5 @@
 /*
- * Simple Template for Grunt
+ * Simple template for HTML, JS and CSS
  * git://github.com/mutian/grunt-simple-tpl.git
  *
  * Copyright (c) 2016 Mutian Wang

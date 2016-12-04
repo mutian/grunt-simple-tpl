@@ -1,6 +1,6 @@
 {
   "name": "grunt-simple-tpl",
-  "description": "Simple Template for Grunt",
+  "description": "Simple template for HTML, JS and CSS",
   "version": "0.1.6",
   "homepage": "git://github.com/mutian/grunt-simple-tpl.git",
   "author": {

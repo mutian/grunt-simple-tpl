@@ -1,6 +1,10 @@
-# grunt-simple-tpl v0.1.6 [![Build Status: Linux](https://travis-ci.org/mutian/grunt-simple-tpl.svg?branch=master)](https://travis-ci.org/mutian/grunt-simple-tpl) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/61h2has50qi0o6pi/branch/master?svg=true)](https://ci.appveyor.com/project/mutian/grunt-simple-tpl/branch/master)
+# grunt-simple-tpl v0.1.7
+
+[![Build Status: Linux](https://travis-ci.org/mutian/grunt-simple-tpl.svg?branch=master)](https://travis-ci.org/mutian/grunt-simple-tpl)
+[![Build Status: Windows](https://ci.appveyor.com/api/projects/status/61h2has50qi0o6pi/branch/master?svg=true)](https://ci.appveyor.com/project/mutian/grunt-simple-tpl/branch/master)
 
 > Simple template for HTML, JS and CSS
+
 
 ## Getting Started
 This plugin requires Grunt `>=0.4.0`
