@@ -30,7 +30,7 @@ Task targets, files and options may be specified according to the grunt [Configu
 ### Options
 
 #### data
-Type: `Object`
+Type: `Object`  
 Default: `{}`
 
 
@@ -137,7 +137,7 @@ HTML template:
 </html>
 ```
 
-Run simple_tpl:prod, it will output:
+Run `simple_tpl:prod`, it will output:
 ```html
 <!DOCTYPE html>
 <html>
@@ -160,7 +160,7 @@ CSS templates:
 }
 ```
 
-Run simple_tpl:prod, it will output:
+Run `simple_tpl:prod`, it will output:
 ```css
 .logo {
 	background: url('//cdn.com/w/1604/i/logo.png?v=1604211431');
