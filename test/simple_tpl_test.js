@@ -53,5 +53,14 @@ exports.simple_tpl = {
     test.equal(actual, expected, 'should describe what the default behavior is.');
 
     test.done();
+  },
+  notpl: function(test) {
+    test.expect(1);
+
+    var actual = grunt.file.read('tmp/views/no-tpl.html');
+    var expected = grunt.file.read('test/expected/no-tpl.html');
+    test.equal(actual, expected, 'should describe what the default behavior is.');
+
+    test.done();
   }
 };
