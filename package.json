@@ -14,7 +14,7 @@
   "bugs": {
     "url": "https://github.com/mutian/grunt-simple-tpl/issues"
   },
-  "licenses": "MIT",
+  "license": "MIT",
   "engines": {
     "node": ">= 0.8.0"
   },
