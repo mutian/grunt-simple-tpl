@@ -32,7 +32,7 @@ exports.simple_tpl = {
 
     var actual = grunt.file.read('tmp/views/index.html');
     var expected = grunt.file.read('test/expected/index.html');
-    test.equal(actual, expected, 'should describe what the default behavior is.');
+    test.equal(actual, expected, 'not match the expected.');
 
     test.done();
   },
@@ -41,7 +41,7 @@ exports.simple_tpl = {
 
     var actual = grunt.file.read('tmp/views/detail/foo.html');
     var expected = grunt.file.read('test/expected/detail/foo.html');
-    test.equal(actual, expected, 'should describe what the default behavior is.');
+    test.equal(actual, expected, 'not match the expected.');
 
     test.done();
   },
@@ -50,7 +50,7 @@ exports.simple_tpl = {
 
     var actual = grunt.file.read('tmp/views/detail/bar.html');
     var expected = grunt.file.read('test/expected/detail/bar.html');
-    test.equal(actual, expected, 'should describe what the default behavior is.');
+    test.equal(actual, expected, 'not match the expected.');
 
     test.done();
   },
@@ -59,7 +59,7 @@ exports.simple_tpl = {
 
     var actual = grunt.file.read('tmp/views/no-tpl.html');
     var expected = grunt.file.read('test/expected/no-tpl.html');
-    test.equal(actual, expected, 'should describe what the default behavior is.');
+    test.equal(actual, expected, 'not match the expected.');
 
     test.done();
   }

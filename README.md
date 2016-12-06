@@ -1,4 +1,4 @@
-# grunt-simple-tpl v0.1.10
+# grunt-simple-tpl v0.1.11
 
 [![Build Status: Linux](https://travis-ci.org/mutian/grunt-simple-tpl.svg?branch=master)](https://travis-ci.org/mutian/grunt-simple-tpl)
 [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/61h2has50qi0o6pi/branch/master?svg=true)](https://ci.appveyor.com/project/mutian/grunt-simple-tpl/branch/master)
@@ -39,83 +39,83 @@ Default: `{}`
 #### Grunt config
 ```js
 grunt.initConfig({
-	simple_tpl: {
-	    dev: {
-	        options: {
-	            data: {
-	                web_root: 'http://dev.domain.com',
-	                css_path: '//dev.cdn.com/w/1604/c',
-	                img_path: '//dev.cdn.com/w/1604/i',
-	                js_path: '//dev.cdn.com/w/1604/j',
-	                version: grunt.template.today("yymmddHHMM")
-	            }
-	        },
-	        files: [
-	            {
-	                expand: true,
-	                cwd: 'html',
-	                src: ['**/*.html'],
-	                dest: '../views'
-	            },
-	            {
-	                expand: true,
-	                cwd: 'css',
-	                src: ['**/*.css'],
-	                dest: '../static/css'
-	            }
-	        ]
-	    },
-	    test: {
-	        options: {
-	            data: {
-	                web_root: 'http://test.domain.com',
-	                css_path: '//test.cdn.com/w/1604/c',
-	                img_path: '//test.cdn.com/w/1604/i',
-	                js_path: '//test.cdn.com/w/1604/j',
-	                version: grunt.template.today("yymmddHHMM")
-	            }
-	        },
-	        files: [
-	            {
-	                expand: true,
-	                cwd: 'html',
-	                src: ['**/*.html'],
-	                dest: '../views'
-	            },
-	            {
-	                expand: true,
-	                cwd: 'css',
-	                src: ['**/*.css'],
-	                dest: '../static/css'
-	            }
-	        ]
-	    },
-	    prod: {
-	        options: {
-	            data: {
-	                web_root: 'http://www.domain.com',
-	                css_path: '//cdn.com/w/1604/c',
-	                img_path: '//cdn.com/w/1604/i',
-	                js_path: '//cdn.com/w/1604/j',
-	                version: grunt.template.today("yymmddHHMM")
-	            }
-	        },
-	        files: [
-	            {
-	                expand: true,
-	                cwd: 'html',
-	                src: ['**/*.html'],
-	                dest: '../views'
-	            },
-	            {
-	                expand: true,
-	                cwd: 'css',
-	                src: ['**/*.css'],
-	                dest: '../static/css'
-	            }
-	        ]
-	    }
-	}
+  simple_tpl: {
+    dev: {
+      options: {
+        data: {
+          web_root: 'http://dev.domain.com',
+          css_path: '//dev.cdn.com/w/1604/c',
+          img_path: '//dev.cdn.com/w/1604/i',
+          js_path: '//dev.cdn.com/w/1604/j',
+          version: grunt.template.today("yymmddHHMM")
+        }
+      },
+      files: [
+        {
+          expand: true,
+          cwd: 'html',
+          src: ['**/*.html'],
+          dest: '../views'
+        },
+        {
+          expand: true,
+          cwd: 'css',
+          src: ['**/*.css'],
+          dest: '../static/css'
+        }
+      ]
+    },
+    test: {
+      options: {
+        data: {
+          web_root: 'http://test.domain.com',
+          css_path: '//test.cdn.com/w/1604/c',
+          img_path: '//test.cdn.com/w/1604/i',
+          js_path: '//test.cdn.com/w/1604/j',
+          version: grunt.template.today("yymmddHHMM")
+        }
+      },
+      files: [
+        {
+          expand: true,
+          cwd: 'html',
+          src: ['**/*.html'],
+          dest: '../views'
+        },
+        {
+          expand: true,
+          cwd: 'css',
+          src: ['**/*.css'],
+          dest: '../static/css'
+        }
+      ]
+    },
+    prod: {
+      options: {
+        data: {
+          web_root: 'http://www.domain.com',
+          css_path: '//cdn.com/w/1604/c',
+          img_path: '//cdn.com/w/1604/i',
+          js_path: '//cdn.com/w/1604/j',
+          version: grunt.template.today("yymmddHHMM")
+        }
+      },
+      files: [
+        {
+          expand: true,
+          cwd: 'html',
+          src: ['**/*.html'],
+          dest: '../views'
+        },
+        {
+          expand: true,
+          cwd: 'css',
+          src: ['**/*.css'],
+          dest: '../static/css'
+        }
+      ]
+    }
+  }
 });
 ```
 
@@ -126,13 +126,13 @@ HTML template:
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>CCT</title>
-	<link rel="stylesheet" href="{{{css_path}}}/global.css?v={{{version}}}">
+  <meta charset="utf-8">
+  <title>CCT</title>
+  <link rel="stylesheet" href="{{{css_path}}}/global.css?v={{{version}}}">
 </head>
 <body>
-	<a href="{{{web_root}}}/home.html"><img src="{{{img_path}}}/logo.png?v={{{version}}}"></a>
-	<script src="{{{js_path}}}/base.js?v={{{version}}}"></script>
+  <a href="{{{web_root}}}/home.html"><img src="{{{img_path}}}/logo.png?v={{{version}}}"></a>
+  <script src="{{{js_path}}}/base.js?v={{{version}}}"></script>
 </body>
 </html>
 ```
@@ -142,13 +142,13 @@ Run `simple_tpl:prod`, it will output:
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>CCT</title>
-	<link rel="stylesheet" href="//cdn.com/w/1604/c/global.css?v=1604211431">
+  <meta charset="utf-8">
+  <title>CCT</title>
+  <link rel="stylesheet" href="//cdn.com/w/1604/c/global.css?v=1604211431">
 </head>
 <body>
-	<a href="http://www.domain.com/home.html"><img src="//cdn.com/w/1604/i/logo.png?v=1604211431"></a>
-	<script src="//cdn.com/w/1604/j/base.js?v=1604211431"></script>
+  <a href="http://www.domain.com/home.html"><img src="//cdn.com/w/1604/i/logo.png?v=1604211431"></a>
+  <script src="//cdn.com/w/1604/j/base.js?v=1604211431"></script>
 </body>
 </html>
 ```
@@ -156,14 +156,14 @@ Run `simple_tpl:prod`, it will output:
 CSS templates:
 ```css
 .logo {
-	background: url('{{{img_path}}}/logo.png?v={{{version}}}');
+  background: url('{{{img_path}}}/logo.png?v={{{version}}}');
 }
 ```
 
 Run `simple_tpl:prod`, it will output:
 ```css
 .logo {
-	background: url('//cdn.com/w/1604/i/logo.png?v=1604211431');
+  background: url('//cdn.com/w/1604/i/logo.png?v=1604211431');
 }
 ```
 
